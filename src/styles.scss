@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: linear-gradient(to right, #dcc367, #97c3d8, #e779ef);
+    background-repeat: no-repeat
+}
+
+input,
+textarea {
+    background-color: #F3E5F5;
+    border-radius: 50px !important;
+    padding: 12px 15px 12px 15px !important;
+    width: 100%;
+    box-sizing: border-box;
+    border: none !important;
+    border: 1px solid #4e4f5d  !important;
+    font-size: 13px !important;
+    color: #000 !important;
+    font-weight: 400
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+    font-weight: 400
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+.card-content{
+    &__first-card{
+        width: 50%;
+        padding: 40px 30px 10px 30px
+    }
+    &__second-card{
+        width: 50%;
+    background-image: linear-gradient(to right, #dcc367, #97c3d8, #e779ef);
+    }
+    &__heading {
+        margin-bottom: 60px !important
+    }
+    &__msg-info {
+        padding-left: 15px;
+        margin-bottom: 30px
+    }
+    img {
+        width: 70px;
+        height: 60px
+    }
+}
+
+::placeholder {
+    color: #000 !important;
+    opacity: 1
+}
+.form-control-label {
+    font-size: 12px;
+    margin-left: 15px
+}
+
+.btn-color {
+    border-radius: 50px;
+    color: rgb(19, 17, 17);
+    background-image: linear-gradient(to right, #dcc367, #97c3d8, #e779ef);
+    padding: 15px;
+    cursor: pointer;
+    border: none !important;
+    margin-top: 40px;
+    border: 2px solid #adc3b4   !important
+}
+
+.btn-color:disabled{
+    color: rgb(19, 17, 17);
+    opacity: .5;
+    pointer-events: none;
+}
+
+.btn-white {
+    border-radius: 50px;
+    color: rgb(19, 17, 17);
+    background-image: linear-gradient(to right, #dcc367, #97c3d8, #e779ef);
+    padding: 8px 40px;
+    cursor: pointer;
+    border: 2px solid #adc3b4   !important
+}
+.bottom {
+    width: 100%;
+    margin-top: 50px !important
+}
+
+.sm-text {
+    font-size: 13px
+}
+
+.display-none{
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .card-content{
+        &__first-card{
+            width: 100%;
+        padding: 40px 30px 10px 30px;
+        }
+        &__second-card{
+            display:none !important;
+        }
+    }
+    .right {
+        margin-top: 100px !important;
+        margin-bottom: 100px !important
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px !important
+    }
+    .card-content{
+        &__second-card{
+           display:none !important;
+        }
+    }
+    .right {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important
+    }
+}

@@ -1,0 +1,19 @@
+.nav-container{
+    &__avatar{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    &__side-bar{
+        background: #ff00a5;   
+        padding: 3px; 
+    }
+    .nav-link {
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+    .nav-link:hover {
+        opacity: 0.5;
+    }
+}

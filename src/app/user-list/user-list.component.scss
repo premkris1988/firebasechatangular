@@ -1,0 +1,42 @@
+// .contacts{
+//   height:38rem;
+//     &__close{
+//         display:none;
+//     }
+// }
+
+// @media screen and (max-width: 1100px) {
+//   .contacts {
+//     width: 45%;
+//     margin-left:30%;
+
+//     &__list {
+//       justify-content: center;
+//       &-name {
+//         display: none;
+//       }
+//       &-avatar{
+//         width: 1.5rem;
+//         height: 1.5rem;
+//         font-size: .75rem;
+//         margin: 0 auto;
+//         padding: 0;
+//       }
+//     }
+//     &__header {
+//       font-size: .8rem;
+//       font-weight: 500;
+//     }
+//     &__search{
+//         display:none;
+//     }
+//     &__close{
+//         display:block;
+//         background: transparent;
+//         :before{
+//             content:'*';
+//         }        
+//     }
+//   }
+// }
+

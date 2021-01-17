@@ -1,0 +1,9 @@
+<div class="contacts" #contact>
+    <h3 class='contacts__header'>Contacts</h3>   
+    <input class="form-control contacts__search" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
+        placeholder="Search Contacts">
+    <div class="contacts__list" *ngFor="let user of userList | filter:searchText" (click)="initChat(user)">
+        <span class="contacts__list-avatar">{{user.userName?.substring(0,1)}}</span>
+        <span class='contacts__list-name'>{{user.userName}}</span>
+    </div>
+</div>

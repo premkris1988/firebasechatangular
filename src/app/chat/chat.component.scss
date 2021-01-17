@@ -1,0 +1,87 @@
+$text-1: #333;
+$text-2: #666;
+$text-3: #999;
+$line: #CCC;
+$time-bg: #EEE;
+$background: #F7F7F7;
+	
+
+.pic {
+	width: 4rem;
+	height: 4rem;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+
+.chat-window  {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+	height:38rem;
+	overflow-y: scroll;
+	&__contact.bar {
+		padding: 1rem;
+		box-sizing: border-box;
+		background: #ff00a5;
+		color: white;
+	}
+	&__avatar{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+	&__messages-selected {
+		margin: 1rem;
+		background-image: linear-gradient(to right, #ff00a59c , white);
+		padding: 1rem;
+		margin-left: 40%;
+		margin-right: 20px;	
+	}
+	&__messages-logged {
+		margin: 1rem;
+		background-image: linear-gradient(to right, white , #ff00a59c);
+		padding: 1rem;
+		margin-right: 40%;
+		margin-left: 20px;		
+	}
+	
+	&__input {
+		display: flex;
+		align-items: center;
+		padding: 1rem;
+		height: 40px;
+
+		input {
+			border: none;
+			background-color: white;
+			padding: 0.5rem 1rem;
+			margin-right: 1rem;
+			border-radius: 1.125rem;
+			font-weight: 400;
+			border:1px solid #ff00a5;
+			&:placeholder {
+				color: $text-3;
+			}
+		}
+	}
+	&__send-button{
+		width: 9rem;
+		height: 40px;
+	}
+}
+
+
+@keyframes typing {
+	0%, 75%, 100% {
+		transform: translate(0, 0.25rem) scale(0.9);
+		opacity: 0.5;
+	}
+	
+	25% {
+		transform: translate(0, -0.25rem) scale(1);
+		opacity: 1;
+	}
+}
